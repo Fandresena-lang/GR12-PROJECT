@@ -80,40 +80,43 @@ justify-items: center;
 
 #card_container {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
-    padding: 20px 40px 40px;
-    
+    padding: 40px;    
 }
 .card{
-background: rgba(17,34,64,0.9);
-color: white;
-padding: 20px;
-border: 0 4px 15px rgba(0,191,255,0.1);
-border-radius: 12px;
-text-align: center;
-box-shadow: 0 4px 15px rgba(0,191,255,0.1);
-transition: 0.3s ease;
+ width: 300px;
+  height: 250px;
+  background: #0f172a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
 }
 
 .card:hover{
+transition: 0.6s;
 transform: translateY(-8px);
-box-shadow: 0 8px 25px rgba(0, 191,255,0.4);}
+box-shadow: 0 8px 25px rgba(0, 191,255,0.4);
+}
 
 img{
-width: 22px;
-height: 22px;
-border-radius:12px ;
+width: 30%;
+height: 30%;
+border-radius:12px;
 }
+
 .card h2{
 font-family: 'Orbitron',sans-serif;
 font-size: 1.2rem;
 margin-bottom:#00BFFF;}
 
 .card p{
-font-size: 0.9 rem;
-color: #8892B0;
-margin-bottom:15px;
+flex-grow: 1;
+  font-size: 14px;
+  overflow: hidden;
 }
 .card button{
 background: linear-gradient(90deg,#1E3A8A,#2563EB);
